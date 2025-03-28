@@ -1,5 +1,5 @@
+import { Check  } from "@phosphor-icons/react";
 import clsx from 'clsx'
-import CheckVector from './check-vector'
 
 interface CheckboxProps {
   selected: boolean
@@ -15,7 +15,7 @@ const CheckboxItem = ({ selected }:CheckboxProps) => {
       )}
       style={{ width: '14.8px', height: '14.8px' }}
     >
-      {selected && <CheckVector />}
+      {selected && <Check size={10} weight="bold" /> }
     </div>
   )
 }
