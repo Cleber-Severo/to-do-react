@@ -8,10 +8,13 @@
   --color-todo-gray-500: #262626;
   --color-todo-gray-600: #1a1a1a;
   --color-todo-gray-700: #0D0D0D;
-  --color-todo-blue-dark: #1E6F9F;
+  
+  --color-todo-blue-dark: rgba(30, 111, 158, 1);
+  --color-todo-blue-dark-opacity: rgba(30, 111, 158, 0.3); 
   --color-todo-blue: #4EA8DE;
   --color-todo-purple-dark: #5E69CE;
   --color-todo-purple: #8284FA;
+  
   --color-todo-danger: #E25858;
 }
 
