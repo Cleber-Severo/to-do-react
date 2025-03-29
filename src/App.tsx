@@ -1,11 +1,13 @@
-import "./App.css";
-import CheckboxItem from "./components/checkbox-item";
+import Header from "./components/header";
+import PageWrapper from "./components/page-wrapper";
 
 function App() {
   return (
     <>
-      <CheckboxItem selected={false} />
-      <CheckboxItem selected={true} />
+      <Header />
+      <PageWrapper>
+        aaa
+      </PageWrapper>
     </>
   );
 }
