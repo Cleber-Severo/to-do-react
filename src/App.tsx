@@ -1,3 +1,4 @@
+import AddTaskForm from "./components/add-task-form";
 import Header from "./components/header";
 import PageWrapper from "./components/page-wrapper";
 
@@ -6,7 +7,7 @@ function App() {
     <>
       <Header />
       <PageWrapper>
-        aaa
+        <AddTaskForm />
       </PageWrapper>
     </>
   );
