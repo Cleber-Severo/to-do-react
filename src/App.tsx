@@ -1,15 +1,13 @@
-import AddTaskForm from "./components/add-task-form";
 import Header from "./components/header";
 import PageWrapper from "./components/page-wrapper";
+import Todo from "./components/todo";
 
 function App() {
   return (
-    <div className="bg-todo-gray-600">
+    <PageWrapper>
       <Header />
-      <PageWrapper>
-        <AddTaskForm />
-      </PageWrapper>
-    </div>
+      <Todo />
+    </PageWrapper>
   );
 }
 

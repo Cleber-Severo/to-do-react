@@ -6,10 +6,7 @@ interface PageWrapperProps {
 
 const PageWrapper = ({ children }: PageWrapperProps) => {
   return (
-    <div
-      style={{ height: "calc(100vh - 200px)" }}
-      className="text-todo-gray-100  max-w-[736px] mx-auto"
-    >
+    <div className="bg-todo-gray-600">
       {children}
     </div>
   );
