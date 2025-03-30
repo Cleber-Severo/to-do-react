@@ -4,12 +4,12 @@ import PageWrapper from "./components/page-wrapper";
 
 function App() {
   return (
-    <>
+    <div className="bg-todo-gray-600">
       <Header />
       <PageWrapper>
         <AddTaskForm />
       </PageWrapper>
-    </>
+    </div>
   );
 }
 
