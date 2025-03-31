@@ -25,7 +25,7 @@ const AddTaskForm = ({ addNewTodo }: AddTaskFormProps) => {
 
   return (
     <form
-      className="flex gap-2 w-full"
+      className="flex items-center gap-2 w-full"
       onSubmit={handleSubmit}
       style={{ transform: "translateY(-50%)" }}
     >
@@ -42,12 +42,13 @@ const AddTaskForm = ({ addNewTodo }: AddTaskFormProps) => {
       />
 
       <button
-        className={clsx(`
+        className={clsx(
+          `
           text-todo-gray-100 bg-todo-blue-dark hover:bg-todo-blue
-          border-none rounded-xl flex flex-row items-center gap-1 p-[16px]
+          border-none rounded-xl flex flex-row items-center gap-1 px-[16px] py-[14px]
         `,
-        {'cursor-no-drop': !todo.length}
-      )}
+          { "cursor-no-drop": !todo.length }
+        )}
         disabled={!todo.length}
       >
         <span className="font-bold">Criar</span>
