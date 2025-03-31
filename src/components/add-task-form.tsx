@@ -1,11 +1,13 @@
 import { PlusCircle } from "@phosphor-icons/react";
-import { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useRef, useState } from "react";
 
 interface AddTaskFormProps {
-  addNewTodo: (text: string) => void
+  addNewTodo: (text: string) => void;
 }
 
 const AddTaskForm = ({ addNewTodo }: AddTaskFormProps) => {
+  const inputRef = useRef<HTMLInputElement>(null);
+
   const [todo, setTodo] = useState("");
 
   const updateTodo = (e: ChangeEvent<HTMLInputElement>) =>
@@ -13,7 +15,11 @@ const AddTaskForm = ({ addNewTodo }: AddTaskFormProps) => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    addNewTodo(todo)
+
+    addNewTodo(todo);
+    setTodo("");
+
+    if (inputRef?.current) inputRef.current.focus();
   };
 
   return (
@@ -24,12 +30,14 @@ const AddTaskForm = ({ addNewTodo }: AddTaskFormProps) => {
     >
       <input
         className={`
-          bg-todo-gray-500 text-todo-gray-300 outline-none focus:text-todo-gray-100 
+          bg-todo-gray-500 text-todo-gray-300 outline-none
+          focus:text-todo-gray-100 focus:border-todo-purple-dark
           border-1 rounded-2xl  border-gray-950  p-4 w-full
         `}
         placeholder="Adicione uma nova tarefa"
         value={todo}
         onChange={updateTodo}
+        ref={inputRef}
       />
 
       <button
