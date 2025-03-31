@@ -21,6 +21,7 @@ const TodoList = ({
   return (
     <div className="overflow-hidden">
       <TodoInfo concludedTasks={concludedTasks} createdTasks={createdTasks} />
+      
       {!createdTasks ? (
         <TodoListPlaceholder />
       ) : (
