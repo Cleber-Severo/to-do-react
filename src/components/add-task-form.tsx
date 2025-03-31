@@ -1,4 +1,5 @@
 import { PlusCircle } from "@phosphor-icons/react";
+import clsx from "clsx";
 import { ChangeEvent, FormEvent, useRef, useState } from "react";
 
 interface AddTaskFormProps {
@@ -41,10 +42,13 @@ const AddTaskForm = ({ addNewTodo }: AddTaskFormProps) => {
       />
 
       <button
-        className={`
+        className={clsx(`
           text-todo-gray-100 bg-todo-blue-dark hover:bg-todo-blue
           border-none rounded-xl flex flex-row items-center gap-1 p-[16px]
-        `}
+        `,
+        {'cursor-no-drop': !todo.length}
+      )}
+        disabled={!todo.length}
       >
         <span className="font-bold">Criar</span>
         <PlusCircle className="-mb-" size={20} weight="bold" />

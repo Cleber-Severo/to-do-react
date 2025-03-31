@@ -19,19 +19,24 @@ const TodoList = ({
   const concludedTasks = todoList.filter((task) => task.isCompleted).length;
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <TodoInfo concludedTasks={concludedTasks} createdTasks={createdTasks} />
       {!createdTasks ? (
         <TodoListPlaceholder />
       ) : (
-        todoList.map((task) => (
-          <TodoItem
-            key={task.id}
-            task={task}
-            updateTodoCompletion={updateTodoCompletion}
-            deleteTodoTask={deleteTodoTask}
-          />
-        ))
+        <div
+          className="flex flex-col gap-2 mt-4"
+          style={{ height: "calc(100vh - 320px)", overflow: "auto" }}
+        >
+          {todoList.map((task) => (
+            <TodoItem
+              key={task.id}
+              task={task}
+              updateTodoCompletion={updateTodoCompletion}
+              deleteTodoTask={deleteTodoTask}
+            />
+          ))}
+        </div>
       )}
     </div>
   );
