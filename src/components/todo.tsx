@@ -20,14 +20,15 @@ const Todo = () => {
 
   const updateTodoCompletion = (id: string) => {
     const selectedTask = todoList.find((task) => task.id === id);
-    const newTodoList = todoList.filter((task) => task.id !== id);
+    const newTodoList = todoList.map((task) => {
+      const isCompleted = task.id !== id ? task.isCompleted : !task.isCompleted
+      
+      return ({...task, isCompleted})
+    });
 
     if (!selectedTask) return;
 
-    setTodoList([
-      ...newTodoList,
-      { ...selectedTask, isCompleted: !selectedTask.isCompleted },
-    ]);
+    setTodoList(newTodoList);
   };
 
   const deleteTodoTask = (id: string) => {
