@@ -1,9 +1,25 @@
-import React from 'react'
+import { ITodo } from "../types/todo";
+import TodoInfo from "./todo-info";
 
-const TodoList = () => {
-  return (
-    <div>TodoList</div>
-  )
+interface TodoListProps {
+  todoList: ITodo[];
 }
 
-export default TodoList
+const TodoList = ({ todoList }: TodoListProps) => {
+  const createdTasks = todoList.length
+  const concludedTasks = todoList.filter(task => task.isCompleted).length
+  
+  return (
+    <div>
+      <TodoInfo 
+        concludedTasks={concludedTasks} 
+        createdTasks={createdTasks} 
+      />
+
+      {/* <TodoPlaceHolder />
+      <TodoList /> */}
+    </div>
+  );
+};
+
+export default TodoList;
