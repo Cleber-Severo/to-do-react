@@ -3,21 +3,26 @@ import clsx from 'clsx'
 
 interface CheckboxProps {
   selected: boolean
+  onClick: () => void
 }
 
-const CheckboxItem = ({ selected }:CheckboxProps) => {
+const CheckboxItem = ({ selected, onClick }:CheckboxProps) => {
   return (
-    <div 
+    <div
       className={clsx(
         "rounded-full flex items-center justify-center cursor-pointer",
-        {'bg-todo-purple-dark hover:bg-todo-purple': selected},
-        {'border border-todo-blue hover:border-todo-blue-dark hover:bg-todo-blue-dark-opacity': !selected}
+        { "bg-todo-purple-dark hover:bg-todo-purple": selected },
+        {
+          "border border-todo-blue hover:border-todo-blue-dark hover:bg-todo-blue-dark-opacity":
+            !selected,
+        }
       )}
-      style={{ width: '14.8px', height: '14.8px' }}
+      style={{ width: "14.8px", height: "14.8px" }}
+      onClick={onClick}
     >
-      {selected && <Check size={10} weight="bold" /> }
+      {selected && <Check size={10} weight="bold" />}
     </div>
-  )
+  );
 }
 
 export default CheckboxItem
