@@ -1,7 +1,11 @@
 import { PlusCircle } from "@phosphor-icons/react";
 import { ChangeEvent, FormEvent, useState } from "react";
 
-const AddTaskForm = () => {
+interface AddTaskFormProps {
+  addNewTodo: (text: string) => void
+}
+
+const AddTaskForm = ({ addNewTodo }: AddTaskFormProps) => {
   const [todo, setTodo] = useState("");
 
   const updateTodo = (e: ChangeEvent<HTMLInputElement>) =>
@@ -9,7 +13,7 @@ const AddTaskForm = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(e);
+    addNewTodo(todo)
   };
 
   return (
