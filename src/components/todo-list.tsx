@@ -2,6 +2,7 @@
 import { ITodo } from "../types/todo";
 import TodoInfo from "./todo-info";
 import TodoItem from "./todo-item";
+import TodoListPlaceholder from "./todo-list-placeholder";
 
 interface TodoListProps {
   todoList: ITodo[];
@@ -21,7 +22,7 @@ const TodoList = ({
     <div>
       <TodoInfo concludedTasks={concludedTasks} createdTasks={createdTasks} />
       {!createdTasks ? (
-        <>Sem registros placeholder</>
+        <TodoListPlaceholder />
       ) : (
         todoList.map((task) => (
           <TodoItem
