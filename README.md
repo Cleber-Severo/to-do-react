@@ -28,11 +28,12 @@ TailwindCSS: Fast and responsive styling
 
 📍 Home Screen
 
-<img width=80% textAlign="center" src="./public/screenshots/initial.png" alt="desktop">
+<img width=70% textAlign="center" src="./public/screenshots/initial.png" alt="desktop">
+<img width=70% textAlign="center" src="./public/screenshots/focus.png" alt="desktop">
 
 ✅ Marking a Task as Completed
 
-<img width=80% textAlign="center" src="./public/screenshots/focus.png" alt="desktop">
+<img width=70% textAlign="center" src="./public/screenshots/todo.png" alt="desktop">
 
 
 🔧 How to Run the Project
@@ -89,11 +90,12 @@ TailwindCSS: Estilização rápida e responsiva
 
 📍 Página Inicial
 
-<img width=80% textAlign="center" src="./public/screenshots/initial.png" alt="desktop">
+<img width=70% textAlign="center" src="./public/screenshots/initial.png" alt="desktop">
+<img width=70% textAlign="center" src="./public/screenshots/focus.png" alt="desktop">
 
 ✅ Marcando uma tarefa como concluida
+<img width=70% textAlign="center" src="./public/screenshots/todo.png" alt="desktop">
 
-<img width=80% textAlign="center" src="./public/screenshots/focus.png" alt="desktop">
 
 🔧 Como Rodar o Projeto
 
