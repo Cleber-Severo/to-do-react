@@ -3,7 +3,8 @@
 [🇬🇧 English Version](#todo-app-english) | [🇧🇷 Versão em Português](#todo-app-português)
 
 ---
-🇬🇧 ## Todo App 
+
+## Todo App English
 
 A simple To-Do application built with React, TailwindCSS, and TypeScript.
 
@@ -63,9 +64,8 @@ This project is licensed under the MIT License. Feel free to use and modify it!
 
 Developed with ❤️ by Cléber Severo 🚀
 
----
 
-## 🇧🇷 Todo App
+## Todo App Português
 
 Um simples aplicativo de tarefas (To-Do) desenvolvido com React, TailwindCSS e TypeScript.
 
