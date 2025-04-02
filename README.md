@@ -8,6 +8,8 @@
 
 A simple To-Do application built with React, TailwindCSS, and TypeScript.
 
+:globe_with_meridians: [Deploy](https://to-do-react-three-alpha.vercel.app/)
+
 📌 Features
 
 - [x] Add a new task
@@ -61,6 +63,8 @@ Developed with ❤️ by Cléber Severo 🚀
 ## Todo App Português
 
 Um simples aplicativo de tarefas (To-Do) desenvolvido com React, TailwindCSS e TypeScript.
+
+:globe_with_meridians: [Deploy](https://to-do-react-three-alpha.vercel.app/)
 
 📌 Funcionalidades
 
