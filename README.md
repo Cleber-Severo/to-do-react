@@ -86,6 +86,7 @@ Um simples aplicativo de tarefas (To-Do) desenvolvido com React, TailwindCSS e T
 <img width=70% textAlign="center" src="./public/screenshots/focus.png" alt="desktop">
 
 ✅ Marcando uma tarefa como concluida
+
 <img width=70% textAlign="center" src="./public/screenshots/todo.png" alt="desktop">
 
 
