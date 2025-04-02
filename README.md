@@ -10,11 +10,11 @@ A simple To-Do application built with React, TailwindCSS, and TypeScript.
 
 📌 Features
 
-Add a new task
+- [x] Add a new task
 
-Mark a task as completed
+- [x] Mark a task as completed
 
-Delete a task
+- [x] Delete a task
 
 🚀 Technologies Used
 
@@ -68,11 +68,11 @@ Um simples aplicativo de tarefas (To-Do) desenvolvido com React, TailwindCSS e T
 
 📌 Funcionalidades
 
-Adicionar uma nova tarefa
+- [x] Adicionar uma nova tarefa
 
-Marcar uma tarefa como concluída
+- [x] Marcar uma tarefa como concluída
 
-Excluir uma tarefa
+- [x] Excluir uma tarefa
 
 🚀 Tecnologias Utilizadas
 
