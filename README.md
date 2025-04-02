@@ -18,11 +18,7 @@ Delete a task
 
 🚀 Technologies Used
 
-React: Library for building user interfaces
-
-TypeScript: Static typing for safer code
-
-TailwindCSS: Fast and responsive styling
+[![My Skills](https://skillicons.dev/icons?i=ts,react,tailwind)](https://skillicons.dev) 
 
 📸 Demo
 
@@ -80,11 +76,7 @@ Excluir uma tarefa
 
 🚀 Tecnologias Utilizadas
 
-React: Biblioteca para construção de interfaces
-
-TypeScript: Tipagem estática para um código mais seguro
-
-TailwindCSS: Estilização rápida e responsiva
+[![My Skills](https://skillicons.dev/icons?i=ts,react,tailwind)](https://skillicons.dev) 
 
 📸 Demonstração
 
