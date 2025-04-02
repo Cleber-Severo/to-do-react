@@ -1,54 +1,113 @@
-# React + TypeScript + Vite
+## Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[🇬🇧 English](#todo-app-english) | [🇧🇷 Português](#todo-app-português)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Todo App English
 
-## Expanding the ESLint configuration
+A simple To-Do application built with React, TailwindCSS, and TypeScript.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+📌 Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- [x] Add a new task
+
+- [x] Mark a task as completed
+
+- [x] Delete a task
+
+🚀 Technologies Used
+
+[![My Skills](https://skillicons.dev/icons?i=ts,react,tailwind)](https://skillicons.dev) 
+
+📸 Demo
+
+📍 Home Screen
+
+<img width=70% textAlign="center" src="./public/screenshots/initial.png" alt="desktop">
+<img width=70% textAlign="center" src="./public/screenshots/focus.png" alt="desktop">
+
+✅ Marking a Task as Completed
+
+<img width=70% textAlign="center" src="./public/screenshots/todo.png" alt="desktop">
+
+
+🔧 How to Run the Project
+
+Clone the repository:
+
+git clone https://github.com/Cleber-Severo/to-do-react.git
+
+Navigate to the project folder:
+
+cd todo-app
+
+Install dependencies:
+```
+npm install
+
+Start the development server:
+
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+📜 License
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project is licensed under the MIT License. Feel free to use and modify it!
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Developed with ❤️ by Cléber Severo 🚀
+
+
+## Todo App Português
+
+Um simples aplicativo de tarefas (To-Do) desenvolvido com React, TailwindCSS e TypeScript.
+
+📌 Funcionalidades
+
+- [x] Adicionar uma nova tarefa
+
+- [x] Marcar uma tarefa como concluída
+
+- [x] Excluir uma tarefa
+
+🚀 Tecnologias Utilizadas
+
+[![My Skills](https://skillicons.dev/icons?i=ts,react,tailwind)](https://skillicons.dev) 
+
+📸 Demonstração
+
+📍 Página Inicial
+
+<img width=70% textAlign="center" src="./public/screenshots/initial.png" alt="desktop">
+<img width=70% textAlign="center" src="./public/screenshots/focus.png" alt="desktop">
+
+✅ Marcando uma tarefa como concluida
+
+<img width=70% textAlign="center" src="./public/screenshots/todo.png" alt="desktop">
+
+
+🔧 Como Rodar o Projeto
+
+Clone o repositório:
+
+git clone https://github.com/Cleber-Severo/to-do-react.git
+
+Acesse a pasta do projeto:
+
+cd todo-app
+
+Instale as dependências:
 ```
+npm install
+
+Start the development server:
+
+npm run dev
+```
+
+📜 Licença
+
+Este projeto está licenciado sob a MIT License. Sinta-se livre para utilizá-lo e modificá-lo!
+
+Desenvolvido com ❤️ por Cléber Severo 🚀
+
