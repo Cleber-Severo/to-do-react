@@ -17,19 +17,19 @@ const TodoItem = ({
   return (
     <div
       key={task.id}
-      className="flex items-top justify-between gap-2 p-4 rounded-md bg-todo-gray-400"
+      className="flex justify-between items-start gap-2 p-4 rounded-md bg-todo-gray-400"
     >
-      <div className="flex items-top justify-between gap-2">
+      <div className="flex items-start gap-3">
         <CheckboxItem
           selected={task.isCompleted}
           onClick={() => updateTodoCompletion(task.id)}
         />
 
         <h5
-          className={clsx("text-todo-gray-100 select-none max-w-[632px] -mt-1", {
+          className={clsx("text-todo-gray-100 select-none -mt-1 max-w-[630px] ", {
             "text-todo-gray-300 line-through": task.isCompleted,
-            
           })}
+          style={{ wordWrap: 'break-word' }}
         >
           {task.text}
         </h5>

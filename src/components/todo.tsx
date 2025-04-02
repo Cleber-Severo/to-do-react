@@ -3,8 +3,7 @@ import TodoList from "./todo-list";
 import useTodo from "../hooks/useTodo";
 
 const Todo = () => {
-  const { todoList, addNewTodo, updateTodoCompletion, deleteTodoTask } =
-    useTodo();
+  const { todoList, addNewTodo, updateTodoCompletion, deleteTodoTask } = useTodo();
 
   return (
     <div
