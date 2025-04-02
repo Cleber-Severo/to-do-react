@@ -43,17 +43,13 @@ Navigate to the project folder:
 cd todo-app
 
 Install dependencies:
-
+```
 npm install
-# or
-yarn install
 
 Start the development server:
 
 npm run dev
-# or
-yarn dev
-
+```
 
 📜 License
 
@@ -101,17 +97,13 @@ Acesse a pasta do projeto:
 cd todo-app
 
 Instale as dependências:
-
+```
 npm install
-# ou
-yarn install
 
-Inicie o servidor de desenvolvimento:
+Start the development server:
 
 npm run dev
-# ou
-yarn dev
-
+```
 
 📜 Licença
 
