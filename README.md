@@ -1,6 +1,6 @@
 ## Todo App
 
-[🇬🇧 English Version](#todo-app-english) | [🇧🇷 Versão em Português](#todo-app-português)
+[🇬🇧 English](#todo-app-english) | [🇧🇷 Português](#todo-app-português)
 
 ---
 
